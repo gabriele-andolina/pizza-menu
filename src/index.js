@@ -53,12 +53,19 @@ function App() {
             <Pizza />
             <Pizza />
             <Pizza />
+            <Footer />
         </div>
     );
 }
 
 function Header() {
     return <h1>Fast React Pizza Co.</h1>;
+}
+
+function Footer() {
+    return (
+        <footer>{new Date().toLocaleTimeString()} We're currently open!</footer>
+    );
 }
 
 function Pizza() {
